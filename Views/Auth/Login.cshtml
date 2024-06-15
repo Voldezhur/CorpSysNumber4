@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Loggin";
+}
+
+<h2>Форма регистрации</h2>
+
+@using(Html.BeginForm("Login", "Auth", FormMethod.Post))
+{
+    <p>Логин</p>
+    @Html.TextBox("Username")
+    <p>Пароль</p>
+    @Html.TextBox("Password")
+
+    <input type="submit" value="Отправить" />
+}

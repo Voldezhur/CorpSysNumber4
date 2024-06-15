@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Auth'd";
+
+    var user = ViewBag.user;
+    var messages = ViewBag.messages;
+}
+
+<div class="text-center">
+    <a class="btn btn-primary" role="button" asp-controller="Authed" asp-action="SendMessage">
+        Написать сообщение, @user.username
+    </a>
+
+    <h2>Сообщения</h2>
+    <table class="table">
+        <tr>
+            <th>Отправитель</th>
+            <th>Получатель</th>
+            <th>Заголовок</th>
+            <th>Текст</th>
+        </tr>
+        @foreach (var item in messages)
+        {
+            <tr>
+                <td>@item.sender_name</td>
+                <td>@item.recipient_name</td>
+                <td>@item.text</td>
+                <td>
+                    @Html.ActionLink("Пометить, как прочитанное", "", new { id = item.id })
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>

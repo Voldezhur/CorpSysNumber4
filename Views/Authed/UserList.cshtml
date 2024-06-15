@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Auth'd";
+    var users = ViewBag.db.users;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Список пользователей:</h1>
+    
+    @foreach (User b in users)
+    {
+        <p>@b.name</p>
+    }
+</div>

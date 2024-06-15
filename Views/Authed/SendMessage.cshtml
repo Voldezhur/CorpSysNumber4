@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Messagin'";
+    var user = ViewBag.user;
+    var db = ViewBag.db;
+}
+
+<h2>Отправить сообщение</h2>
+
+<h1>@user.username</h1>
+
+@using(Html.BeginForm("SendMessage", "Authed", FormMethod.Post))
+{
+    <p>Отправитель</p>
+    @Html.TextBox("Sender_name", (string)user.username)
+    <p>Получатель</p>
+    @Html.TextBox("Recipient_name")
+    <p>Текст</p>
+    @Html.TextBox("Text")
+
+    <input type="submit" value="Отправить" />
+}

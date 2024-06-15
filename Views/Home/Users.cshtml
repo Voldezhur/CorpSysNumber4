@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+@model IEnumerable<Practice4.Models.User>
+
+<div class="text-center">
+    <h1 class="display-4">Список пользователей:</h1>
+    
+    @foreach (User b in Model)
+    {
+        <p>@b.name</p>
+    }
+</div>
