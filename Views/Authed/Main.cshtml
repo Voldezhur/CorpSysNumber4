@@ -15,7 +15,6 @@
         <tr>
             <th>Отправитель</th>
             <th>Получатель</th>
-            <th>Заголовок</th>
             <th>Текст</th>
         </tr>
         @foreach (var item in messages)
@@ -24,9 +23,6 @@
                 <td>@item.sender_name</td>
                 <td>@item.recipient_name</td>
                 <td>@item.text</td>
-                <td>
-                    @Html.ActionLink("Пометить, как прочитанное", "", new { id = item.id })
-                </td>
             </tr>
         }
     </table>

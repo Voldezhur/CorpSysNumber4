@@ -35,3 +35,4 @@
 /home/voldezhur/Desktop/Универ/Корпоратив/Семестр 2/Practice4/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /home/voldezhur/Desktop/Универ/Корпоратив/Семестр 2/Practice4/obj/Debug/net8.0/Practice4.csproj.AssemblyReference.cache
 /home/voldezhur/Desktop/Универ/Корпоратив/Семестр 2/Practice4/obj/Debug/net8.0/Practice4.csproj.Up2Date
+/home/voldezhur/Desktop/Универ/Корпоратив/Семестр 2/Practice4/obj/Debug/net8.0/Practice4.sourcelink.json
